@@ -25,8 +25,7 @@ function App() {
   }
   return (
     <div className='app'>
-
-      <div className='header'>
+<div className='header'>
       <h1>Application for project Manager</h1>
       </div>
 
@@ -74,50 +73,48 @@ function App() {
       </form>
 
       <div className='main'>
-
-        <div className='todos'>
-          <ul>
-            {todos.map(todo => {
-              return(
-                <div>
-                <li> Title: {todo.title}
-                <br/>
-                Tags: {todo.tags}
-                <br/>
-                Description: {todo.description}
-                </li>
-                <button 
-                onClick={() => {
-                  setDones([
-                    {
-                      title: todo.title,
-                      tags: todo.tags,
-                      description : todo.description
-                    },
-                    ...dones])
-                  setTodos(todos.filter(t => t != todo))
-                } }
-                >
-                  DONE
-                </button>
-                </div>
-              )
-            })}
-          </ul>
-        </div>
-
-        <div className='dones'>
-        <ul>
+      <div className='todoContainer'>
+          <h3>To Do</h3>
+          {todos.map(todo => {
+            return(
+              <div className='todoCard'>
+                   Title: {todo.title}
+                  <br/>
+                  Tags: {todo.tags}
+                  <br/>
+                  Description: {todo.description}
+                  <button 
+                  className='buttonDone'
+                  onClick={() => {
+                    setDones([
+                      {
+                        title: todo.title,
+                        tags: todo.tags,
+                        description : todo.description
+                      },
+                      ...dones])
+                    setTodos(todos.filter(t => t != todo))
+                  } }
+                  >
+                    DONE
+                  </button>
+              </div>
+  )
+})}
+      </div>
+      <div className='doneContainer'>
+          <h3>DONE</h3>
+          
             {dones.map(done => {
               return(
-                <div>
-                <li> Title: {done.title}
+                <div className='doneCard'>
+                Title: {done.title}
                 <br/>
                 Tags: {done.tags}
                 <br/>
                 Description: {done.description}
-                </li>
                 <button 
+                className='toDoButton'
                 onClick={() => {
                   setTodos([{
                     title: done.title,
@@ -133,12 +130,33 @@ function App() {
                 </div>
               )
             })}
-          </ul>
-        </div>
-
+          
       </div>
+    </div>
+    <div className='footer'>
+      <div className='devInfo'>
+            <div className='name'>
+              <h3>Sergio Radigales</h3>
+            </div>
+            <div>
+              <a target="_blank" href='https://www.linkedin.com/in/sergioradigales/'
+              >
+                LinkedIn
+              </a>
+            </div>
+      </div>
+      <div className='projectInfo'>
+            <div>
+              <h4>@ToDoApp</h4>
+            </div>
+            <div>
+              <h5>Oxygen Academy Test</h5>
+            </div>
+      </div>
+    </div>
     </div>
   );
 };
 
 export default App;
+
