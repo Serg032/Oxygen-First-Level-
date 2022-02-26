@@ -144,6 +144,12 @@ function App() {
                 LinkedIn
               </a>
             </div>
+            <div>
+              <a target="_blank" href= "https://github.com/Serg032"
+              >
+                GitHub
+              </a>
+            </div>
       </div>
       <div className='projectInfo'>
             <div>

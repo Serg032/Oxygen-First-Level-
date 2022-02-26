@@ -1,5 +1,5 @@
 .app {
-  background-color: azure;
+  background-color: rgb(225, 228, 228);
   position: absolute;
 
   width: 100vw;
@@ -108,4 +108,9 @@
 .devInfo {
   padding: 10px;
   margin: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
