@@ -142,7 +142,7 @@ function App() {
               <a 
               target="_blank" 
               href='https://www.linkedin.com/in/sergioradigales/'
-              rel='noopener'
+              rel='noreferrer'
               >
                 LinkedIn
               </a>
@@ -151,7 +151,7 @@ function App() {
               <a 
               target="_blank" 
               href= "https://github.com/Serg032" 
-              rel='noopener'
+              rel='noreferrer'
               >
                 GitHub
               </a>
