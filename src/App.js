@@ -93,7 +93,7 @@ function App() {
                         description : todo.description
                       },
                       ...dones])
-                    setTodos(todos.filter(t => t != todo))
+                    setTodos(todos.filter(t => t !== todo))
                   } }
                   >
                     DONE
@@ -122,7 +122,7 @@ function App() {
                     description: done.description
                   },
                   ...todos])
-                  setDones(dones.filter(d => d != done))
+                  setDones(dones.filter(d => d !== done))
                 } }
                 >
                   To Do
