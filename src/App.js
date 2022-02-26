@@ -139,13 +139,19 @@ function App() {
               <h3>Sergio Radigales</h3>
             </div>
             <div>
-              <a target="_blank" href='https://www.linkedin.com/in/sergioradigales/'
+              <a 
+              target="_blank" 
+              href='https://www.linkedin.com/in/sergioradigales/'
+              
               >
                 LinkedIn
               </a>
             </div>
             <div>
-              <a target="_blank" href= "https://github.com/Serg032"
+              <a 
+              target="_blank" 
+              href= "https://github.com/Serg032" 
+              
               >
                 GitHub
               </a>
